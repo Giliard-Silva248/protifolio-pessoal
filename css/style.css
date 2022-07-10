@@ -35,11 +35,22 @@ body{
 /*APRESENTAÇÃO*/
 .apresentacao{
     height: 150px;
-    padding: 80px;
-    background-image: url();
-    
+    padding: 50px;    
+    background-image: url("/GitHub/protifolio-pessoal/img/fundo.png");
 }
 
+/*HABILIDADES*/
+.skils{
+    width: 100%;
+    display: flex;
+    border: 2px solid;
+    align-self: center;
+    justify-content: center;   
+}
+.skils div{
+    border: 2px solid;
+    margin: 15px;
+}
 /*RODAPÉ*/
 footer{
     text-align: center;
