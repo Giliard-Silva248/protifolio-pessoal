@@ -41,16 +41,46 @@ body{
 
 /*HABILIDADES*/
 .skils{
+    max-width: 1000px;
     width: 100%;
     display: flex;
-    border: 2px solid;
-    align-self: center;
-    justify-content: center;   
+    border: 2px solid; 
+    overflow-x: scroll;
+}
+.skils::-webkit-scrollbar{
+    width: 1px;
+}
+.skils::-webkit-scrollbar-track{
+    background: var(--cor3);
+}
+.skils::-webkit-scrollbar-thumb{
+    background-color: var(--cor8);   
+    border-radius: 20px;       
+    border: 3px solid var(--cor3);
+}
+.txtHab{
+    text-align: center;
+    margin: 10px;
 }
 .skils div{
     border: 2px solid;
     margin: 15px;
 }
+
+/*PROJETOS*/
+.projetos{
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    border: 2px solid;
+}
+
+.projetos div{
+    border-left: 5px solid var(--cor6);
+    padding-left: 5px;
+    margin: 15px;
+}
+
 /*RODAPÉ*/
 footer{
     text-align: center;
