@@ -1,43 +1,42 @@
+/*GERAL*/
 body{
     background-color: black;
     color: white;
-    border: 1px solid;
 }
 
 .externo{
     display: flex;
-    max-width: 1360px;
     height: 1000px;
     margin: auto;
 }
 
 .contatos{
-    width: 500px;
+    max-width: 150px;
+    width: 100%;
     display: flex;
+    height: 100vh;
     flex-direction: column;
     background-color: #8a898a;
+    position: fixed;
 }
 .conteudos{
-
-}
-
-h2{
-    text-align: center;
+    margin: auto;
 }
 .apresentacao,
 .habilidades,
 .projetos,
 .experiencia{
+    max-width: 1000px;
     width: 90%;
-    margin: 30px;
+    margin: auto;
     height: auto;
+    text-align: justify;
+    margin-bottom: 100px;
 }
 
-.habilidades p{
 
-}
+/*ESPECIFICOS*/
 .progress-bar{
-    width: 550px;
     height: 15px;
     background-color: #ccc;
     display: flex;
@@ -71,10 +70,35 @@ h2{
 }
   
 
-
+.projetos li{
+    list-style:none;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: #8a898a;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+.projetos li:hover{
+    background-color: black;
+}
+.projetos a{
+    text-decoration: none;
+    color: white;
+}
 
 .title-cont{
-    height: 100px;
+    height: 50px;  
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 50px;
+}
+.title-cont h3{
+    border-bottom: 5px solid;
+    width: 10%;
+    align-self: center;
+    margin-left: 10px;
 }
 .inst,
 .linke,
@@ -101,4 +125,19 @@ a{
 .botao:hover{
     background-color: black;
     color: white;
+}
+
+.experiencia p{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.apresentacao{
+    margin-top: 100px;
+}
+.apresentacao h1{
+    border-bottom: 2px solid;
+    width: 350px;
+    margin-bottom: 50px;
+    font-size: 42px;
 }
