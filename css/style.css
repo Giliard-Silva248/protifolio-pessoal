@@ -1,155 +1,104 @@
-/*:root{
-    --cor1: #7b2cbf;
-    --cor2: #5a189a;
-    --cor3: #3c096c;
-    --cor4: #240046;
-    --cor5: #10002b;
-    --cor6: #9d4edd;
-    --cor7: #c77dff;
-    --cor8: #e0aaff;
-}*/
-*{
-    padding: 0;
-    margin: 0;
-
-}
 body{
     background-color: black;
     color: white;
-}
-
-img{
-    width: 100%;
-    border-radius: 10% 0;
-}
-
-.apresentacao{
-    width: 100%;
-    padding: 100px 0px 100px 0px;
-    background-image: url(/GitHub/protifolio-pessoal/img/fundo.png);
-    background-size: cover;
-    background-attachment: fixed;
-    display: inline-flex;
-}
-
-.apres{
-    margin-left: 5%;
-}
-
-.apres h1{
-    font-size: 55px;
-    margin-bottom: 15px;
-}
-
-
-.apres p{
-    font-size: 30px;
-}
-
-.skils,
-.projetos,
-.experiencia{
-    width: 100%;
-    margin: auto;
-    
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-}
-
-.hab,
-.proj,
-.xp{
-    flex-shrink: 1;
-    margin: 10px;
-    width: 200px;
     border: 1px solid;
-    border-radius: 10% 0;
 }
-.button{
-    position: fixed;
-    float: right;
-    top: 90%;
-    right: 1%;
-    flex: 1;
-    align-self: flex-end;
-    justify-content: end;
-    display: flex;
-    height: 50px;
-    font-size: 19px;
-}
-.button a{
-    text-decoration: none;
-    align-self: flex-end;
-    background-color: transparent;
-    color: white;
-    border: none;
-    border-bottom: 3px solid;
 
+.externo{
+    display: flex;
+    max-width: 1360px;
+    height: 1000px;
+    margin: auto;
 }
-.button a:hover{
-    color: rgb(134, 132, 132);
+
+.contatos{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: #8a898a;
+}
+.conteudos{
+
 }
 
 h2{
-    width: 25%;
-    font-size: 25px;
-    border-bottom: 3px solid;
-    margin: 25px 0px 25px 25px;
     text-align: center;
 }
+.apresentacao,
+.habilidades,
+.projetos,
+.experiencia{
+    width: 90%;
+    margin: 30px;
+    height: auto;
+}
+
+.habilidades p{
+
+}
+.progress-bar{
+    width: 550px;
+    height: 15px;
+    background-color: #ccc;
+    display: flex;
+}
+.html::before{
+    content: "";
+    /* Por enquanto colocamos
+      uma largura e uma cor
+      com valores fixos
+      */
+    width: 65%;
+    background-color: #1aff00;
+}
+.css::before{
+    content: "";
+    /* Por enquanto colocamos
+      uma largura e uma cor
+      com valores fixos
+      */
+    width: 52%;
+    background-color: #1aff00;
+}
+.js::before{
+    content: "";
+    /* Por enquanto colocamos
+      uma largura e uma cor
+      com valores fixos
+      */
+    width: 40%;
+    background-color: #1aff00;
+}
+  
 
 
 
-footer{
+.title-cont{
+    height: 100px;
+}
+.inst,
+.linke,
+.gith{
+    height: 100px;
+    text-decoration: none;
+    margin: 0;
     text-align: center;
-    padding: 15px 0px 15px 0px;
+    display: flex;
 }
 
-@media(max-width: 250px){
-    .apres h1{
-        font-size: 30px;
-        margin-bottom: 15px;
-    }
-    .apres p{
-        font-size: 16px;
-    }
-    h2{
-        width: 50%;
-        font-size: 16px;
-    }
-    .button{
-        font-size: 16px;
-    }
+a{
+    justify-content: center;
+    align-items: center;
 }
 
-@media(max-width: 145px){
-    h2{
-        width: 40%;
-        font-size: 13px;
-
-    }
+.botao{
+    margin: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #8a898a;
+    border: none;
 }
-
-/*----------TESTES----------*/
-
-/*.skils{
-
-    overflow-x: scroll;
+.botao:hover{
+    background-color: black;
+    color: white;
 }
-.skils::-webkit-scrollbar{
-    width: 1px;
-}
-.skils::-webkit-scrollbar-track{
-    background: var(--cor3);
-}
-.skils::-webkit-scrollbar-thumb{
-    background-color: var(--cor8);   
-    border-radius: 20px;       
-    border: 3px solid var(--cor3);
-}
-.txtHab{
-    text-align: center;
-    margin: 10px;
-}*/
