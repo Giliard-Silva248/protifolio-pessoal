@@ -1,25 +1,26 @@
 /*GERAL*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&display=swap');
+
+:root{
+    --cor1: #D9D9D9;
+    --cor2: #A6A6A6;
+    --cor3: #737373;
+    --cor4: #404040;
+    --cor5: #0D0D0D;
+
+    --font: 'Noto Serif', serif;;
+}
+
+
 body{
-    background-color: black;
-    color: white;
+    background-color: var(--cor5);
+    color: var(--cor1);
+    font-family: var(--font);
 }
 
 .externo{
     display: flex;
     height: 1000px;
-    margin: auto;
-}
-
-.contatos{
-    max-width: 150px;
-    width: 100%;
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
-    background-color: #8a898a;
-    position: fixed;
-}
-.conteudos{
     margin: auto;
 }
 .apresentacao,
@@ -35,59 +36,20 @@ body{
 }
 
 
-/*ESPECIFICOS*/
-.progress-bar{
-    height: 15px;
-    background-color: #ccc;
+
+/*CONTATOS*/
+.contatos{
+    max-width: 150px;
+    width: 100%;
     display: flex;
+    height: 100vh;
+    flex-direction: column;
+    background-color: var(--cor4);
+    position: fixed;
 }
-.html::before{
-    content: "";
-    /* Por enquanto colocamos
-      uma largura e uma cor
-      com valores fixos
-      */
-    width: 65%;
-    background-color: #1aff00;
+.conteudos{
+    margin: auto;
 }
-.css::before{
-    content: "";
-    /* Por enquanto colocamos
-      uma largura e uma cor
-      com valores fixos
-      */
-    width: 52%;
-    background-color: #1aff00;
-}
-.js::before{
-    content: "";
-    /* Por enquanto colocamos
-      uma largura e uma cor
-      com valores fixos
-      */
-    width: 40%;
-    background-color: #1aff00;
-}
-  
-
-.projetos li{
-    list-style:none;
-    margin: 10px;
-    border-radius: 15px;
-    background-color: #8a898a;
-    width: 150px;
-    padding: 10px;
-    text-align: center;
-    font-size: 15px;
-}
-.projetos li:hover{
-    background-color: black;
-}
-.projetos a{
-    text-decoration: none;
-    color: white;
-}
-
 .title-cont{
     height: 50px;  
     text-align: center;
@@ -95,7 +57,7 @@ body{
     margin-bottom: 50px;
 }
 .title-cont h3{
-    border-bottom: 5px solid;
+    border-bottom: 5px solid var(--cor1);
     width: 10%;
     align-self: center;
     margin-left: 10px;
@@ -119,25 +81,79 @@ a{
     margin: 0;
     width: 100%;
     height: 100px;
-    background-color: #8a898a;
+    background-color: var(--cor4);
     border: none;
 }
 .botao:hover{
-    background-color: black;
-    color: white;
+    background-color: var(--cor5);
+    color: var(--cor1);
 }
 
-.experiencia p{
-    text-align: center;
-    margin-top: 100px;
-}
+
+
+/*APRESENTAÇÃO*/
 
 .apresentacao{
     margin-top: 100px;
 }
 .apresentacao h1{
     border-bottom: 2px solid;
-    width: 350px;
+    width: 430px;
     margin-bottom: 50px;
     font-size: 42px;
 }
+
+
+
+/*HABILIDADES*/
+.progress-bar{
+    height: 15px;
+    background-color: var(--cor2);
+    display: flex;
+}
+.html::before{
+    content: "";
+    width: 65%;
+    background-color: var(--cor4);
+}
+.css::before{
+    content: "";
+    width: 52%;
+    background-color: var(--cor4);
+}
+.js::before{
+    content: "";
+    width: 40%;
+    background-color: var(--cor4);
+}
+  
+
+
+/*PROJETOS*/
+.projetos li{
+    list-style:none;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: var(--cor4);
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+.projetos li:hover{
+    background-color: var(--cor5);
+}
+.projetos a{
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+
+
+/*EXPERIÊNCIA*/
+
+.experiencia p{
+    text-align: center;
+    margin-top: 100px;
+}
+
