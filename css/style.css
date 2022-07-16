@@ -108,17 +108,17 @@ body{
 .html::before{
     content: "";
     width: 65%;
-    background-color: var(--cor4);
+    background-color: var(--cor5);
 }
 .css::before{
     content: "";
     width: 52%;
-    background-color: var(--cor4);
+    background-color: var(--cor5);
 }
 .js::before{
     content: "";
     width: 40%;
-    background-color: var(--cor4);
+    background-color: var(--cor5);
 }
   
 
