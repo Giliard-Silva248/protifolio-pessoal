@@ -13,22 +13,23 @@
 
 
 body{
-    background-color: var(--cor5);
+    background-image: linear-gradient(to top, #0d0d0d, #373636, #5f5d5d);
     color: var(--cor1);
     font-family: var(--font);
+    height: 100%;
+    width: 99.99%;
 }
 
 .externo{
-    display: flex;
-    height: 1000px;
     margin: auto;
 }
 .apresentacao,
 .habilidades,
 .projetos,
-.experiencia{
+.experiencia,
+.certificados{
     max-width: 1000px;
-    width: 90%;
+    width: 100%;
     margin: auto;
     height: auto;
     text-align: justify;
@@ -36,30 +37,27 @@ body{
 }
 
 
+.conteudos{
+    width: 100%;
+}
 
 /*CONTATOS*/
 .contatos{
     max-width: 150px;
     width: 100%;
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
-    background-color: var(--cor4);
+    height: 100%;
+    background-color: var(--cor5);
     position: fixed;
+    top: 0;
 }
-.conteudos{
-    margin: auto;
-}
-.title-cont{
-    height: 50px;  
-    text-align: center;
+.title-cont{ 
     margin-top: 10%;
     margin-bottom: 50px;
 }
 .title-cont h3{
     border-bottom: 5px solid var(--cor1);
     width: 10%;
-    align-self: center;
+
     margin-left: 10px;
 }
 .inst,
@@ -67,26 +65,21 @@ body{
 .gith{
     height: 100px;
     text-decoration: none;
-    margin: 0;
+   
     text-align: center;
-    display: flex;
-}
-
-a{
-    justify-content: center;
-    align-items: center;
 }
 
 .botao{
-    margin: 0;
+    font-size: 16px;
     width: 100%;
     height: 100px;
-    background-color: var(--cor4);
+    background-color: var(--cor5);
     border: none;
+    color: var(--cor1);
 }
 .botao:hover{
-    background-color: var(--cor5);
-    color: var(--cor1);
+    background-color: var(--cor3);
+    color: var(--cor5);
 }
 
 
@@ -107,6 +100,7 @@ a{
 
 /*HABILIDADES*/
 .progress-bar{
+    width: 50%;
     height: 15px;
     background-color: var(--cor2);
     display: flex;
@@ -157,3 +151,95 @@ a{
     margin-top: 100px;
 }
 
+/*CERTIFICADOS*/
+
+.certificados{
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+}
+
+
+.certificados img{
+    max-width: 300px;
+    margin-right: 5px;
+}
+
+.s1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media(max-width: 1400px){
+    .externo{
+        width: 99.99%;
+    }
+    .conteudos{
+        width: 70%;
+        margin: auto;
+        margin-left: 26%;
+
+    }
+}
+@media(max-width: 1040px){
+    .contatos{
+        max-width: 100px;
+        width: 100%;
+    }
+    .title-cont{
+        font-size: 12px;
+    }
+    .botao{
+        font-size: 15px;
+    }
+}
+@media(max-width: 700px){
+    .contatos{
+        max-width: 100px;
+        width: 100%;
+    }
+    .title-cont{
+        font-size: 12px;
+    }
+    .apresentacao h1{
+        width: 50%;
+        font-size: 25px;
+    }
+}
+@media(max-width: 400px){
+    .s1 img{
+        width: 200px;
+    }
+
+    .conteudos{
+        width: 95%;
+        margin: auto;
+    }
+
+    .contatos{ 
+        width: 100%;
+        height: 30px;
+        max-width: 100%;
+        display: flex;
+        flex-direction:row;
+        background-color:#4040403d;
+        justify-content: center;
+    }
+
+   .botao{  
+    font-size: 15px;
+        max-width: 100px;
+        width: 100%;
+        margin-left: 10px;
+        margin-top: 10px;
+        height: auto;
+        color: var(--cor1);
+        background-color: transparent;
+    }
+    
+    .title-cont{
+        display: none;
+    }
+}
+  
