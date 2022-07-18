@@ -2,18 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&display=swap');
 
 :root{
-    --cor1: #D9D9D9;
-    --cor2: #A6A6A6;
-    --cor3: #737373;
-    --cor4: #404040;
-    --cor5: #0D0D0D;
+    --cor1: #ffffff;
+    --cor2: #6C969D;
+    --cor3: #645E9D;
+    --cor4: #392B58;
+    --cor5: #2D0320;
 
     --font: 'Noto Serif', serif;;
 }
 
 
 body{
-    background-image: linear-gradient(to top, #0d0d0d, #373636, #5f5d5d);
+    background-color: var(--cor4);
     color: var(--cor1);
     font-family: var(--font);
     height: 100%;
@@ -50,16 +50,7 @@ body{
     position: fixed;
     top: 0;
 }
-.title-cont{ 
-    margin-top: 10%;
-    margin-bottom: 50px;
-}
-.title-cont h3{
-    border-bottom: 5px solid var(--cor1);
-    width: 10%;
 
-    margin-left: 10px;
-}
 .inst,
 .linke,
 .gith{
@@ -78,8 +69,8 @@ body{
     color: var(--cor1);
 }
 .botao:hover{
-    background-color: var(--cor3);
-    color: var(--cor5);
+    background-color: var(--cor4);
+    color: var(--cor2);
 }
 
 
@@ -100,24 +91,28 @@ body{
 
 /*HABILIDADES*/
 .progress-bar{
-    width: 50%;
+    width: 99%;
     height: 15px;
     background-color: var(--cor2);
     display: flex;
+    border-radius: 10px;
 }
 .html::before{
     content: "";
     width: 65%;
+    border-radius: 10px;
     background-color: var(--cor5);
 }
 .css::before{
     content: "";
     width: 52%;
+    border-radius: 10px;
     background-color: var(--cor5);
 }
 .js::before{
     content: "";
     width: 40%;
+    border-radius: 10px;
     background-color: var(--cor5);
 }
   
@@ -171,6 +166,14 @@ body{
     justify-content: center;
 }
 
+@media(min-width: 1401px){
+    
+    .conteudos{
+        width: 97%;
+        margin: auto;
+        margin-left: 3%;
+    }
+}
 @media(max-width: 1400px){
     .externo{
         width: 99.99%;
